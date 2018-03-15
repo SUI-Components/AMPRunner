@@ -3,7 +3,7 @@ module.exports = (page, container) => async array => {
 
   const base = await Promise.all(
     Object.keys(queries).map(async query => {
-      return await page.$$eval(
+      return page.$$eval(
         query,
         (elements, mapper) => {
           return Promise.all(
