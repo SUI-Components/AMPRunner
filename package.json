@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "co": "sui-mono co"
+  },
+  "dependencies": {
+    "@browserless/aws-lambda-chrome": "1.0.4",
+    "express": "4.16.2",
+    "just-filter": "1.1.19",
+    "just-flatten-it": "2.0.0",
+    "puppeteer": "1.1.1",
+    "request": "2.83.0",
+    "request-promise-native": "1.0.5",
+    "require-from-string": "2.0.1",
+    "swig": "1.4.2"
+  },
+  "devDependencies": {
+    "@s-ui/lint": "2",
+    "@s-ui/mono": "1"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": "@schibstedspain/sui-mono/src/types"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  }
+}
