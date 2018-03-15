@@ -1,4 +1,4 @@
-# AMPasService (serverless)
+# AMPRunner
 
 Using aws lambdas function we can provide an AMP versión of any page
 
