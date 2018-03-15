@@ -1,4 +1,6 @@
 {
+  "name": "@s-ui/AMPRunner",
+  "private": true,
   "scripts": {
     "co": "sui-mono commit",
     "lint": "sui-lint js && sui-lint sass",
@@ -23,7 +25,7 @@
   },
   "config": {
     "validate-commit-msg": {
-      "types": "@schibstedspain/sui-mono/src/types"
+      "types": "@s-ui/sui-mono/src/types"
     }
   },
   "eslintConfig": {
