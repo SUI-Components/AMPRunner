@@ -1,11 +1,12 @@
 {
   "name": "@s-ui/amp-runner",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "bin": {"amp": "./index.js"},
   "scripts": {
     "co": "sui-mono commit",
     "lint": "sui-lint js && sui-lint sass",
-    "precommit": "sui-precommit run"
+    "precommit": "sui-precommit run",
+    "start": "node index.js"
   },
   "dependencies": {
     "@browserless/aws-lambda-chrome": "1.0.4",

@@ -9,7 +9,7 @@ Clone the repo and inside `packages/serverless` run `$ npm install`
 
 ## Development
 
-To start to develop run `npm start` that will put a server listen in at the port 300 by default o any port setting in the `process.env.PORT` variable.
+To start to develop run `npm start` that will put a server listen in at the port 3000 by default o any port setting in the `process.env.PORT` variable.
 
 The server will response to GET request with the format:
 

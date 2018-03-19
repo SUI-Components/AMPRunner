@@ -12,6 +12,8 @@ const app = express()
 
 const { PORT = 3000 } = process.env
 
+app.get('/', res => res.send({ status: 'OK', timestamp: Date.now() }))
+
 app.get('/amp/**', async (req, res) => {
   const browser = await initBrowser()
   const url = req.params[0]
