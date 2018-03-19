@@ -1,6 +1,7 @@
 {
-  "name": "@s-ui/AMPRunner",
-  "private": true,
+  "name": "@s-ui/amp-runner",
+  "version": "1.0.0",
+  "bin": {"amp": "./index.js"},
   "scripts": {
     "co": "sui-mono commit",
     "lint": "sui-lint js && sui-lint sass",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const express = require('express')
 const requireFromString = require('require-from-string')
 const initBrowser = require('./src/browser')
