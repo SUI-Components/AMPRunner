@@ -12,7 +12,7 @@ const app = express()
 
 const { PORT = 3000 } = process.env
 
-app.get('/', res => res.send({ status: 'OK', timestamp: Date.now() }))
+app.get('/', (req, res) => res.send({ status: 'OK', timestamp: Date.now() }))
 
 app.get('/amp/**', async (req, res) => {
   const browser = await initBrowser()
