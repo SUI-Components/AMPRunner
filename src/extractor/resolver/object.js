@@ -10,15 +10,15 @@ module.exports = (page, container) => async queries => {
           (element, mapper) => {
             const innerMapper = Function(`return (${mapper})(arguments[0])`) // eslint-disable-line
             const withNode = fn => node =>
-              node ? fn(node) : { [Object.keys(fn({}))[0]]: false }
+              node ? fn(node) : {[Object.keys(fn({}))[0]]: false}
             return withNode(innerMapper)(element)
           },
           `${queries[query]}`
         )
         .catch(err => {
           log(err)
-          return { [head(Object.keys(queries[query]({})))]: false }
+          return {[head(Object.keys(queries[query]({})))]: false}
         })
     })
-  )).reduce((acc, obj) => ({ ...acc, ...obj }), {})
+  )).reduce((acc, obj) => ({...acc, ...obj}), {})
 }
