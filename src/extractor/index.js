@@ -4,7 +4,7 @@ const kebakCaseToPascal = str =>
   str.replace(/(-\w)/g, match => match[1].toUpperCase())
 const log = (...args) => console.log.apply(console, args)
 
-module.exports = async ({ browser, url, queries }) =>
+module.exports = async ({browser, url, queries}) =>
   new Promise(async (resolve, reject) => {
     let done = false
     const {

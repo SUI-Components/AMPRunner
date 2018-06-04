@@ -33,7 +33,7 @@ const readORIdentity = path => {
   }
 }
 
-module.exports = async ({ org, pkg, ver = 'latest' }) => {
+module.exports = async ({org, pkg, ver = 'latest'}) => {
   const CDN_HOST = 'https://unpkg.com/'
   const key = `${org}#${pkg}#${ver}`
   const cdn = [CDN_HOST, org && `@${org}`, `/${pkg}`, ver && `@${ver}`]
