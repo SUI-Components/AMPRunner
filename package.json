@@ -29,6 +29,9 @@
     "husky": "0.13.4"
   },
   "config": {
+    "sui-mono": {
+      "access": "public"
+    },
     "validate-commit-msg": {
       "types": "@s-ui/sui-mono/src/types"
     }
