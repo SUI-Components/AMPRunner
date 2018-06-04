@@ -6,3 +6,4 @@ node_modules/
 out.zip
 .DS_*
 npm-debug.log
+package-lock.json
