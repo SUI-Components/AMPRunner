@@ -43,7 +43,7 @@ app.get('/amp/**', async (req, res) => {
     }
     res.send(postprocessing(generator({data: obj, template})))
   } catch (e) {
-    return res.status(500).send(e.message)
+    res.status(500).send(e.message)
   } finally {
     browser && (await browser.close())
     cleanProfileFolder(browser)
