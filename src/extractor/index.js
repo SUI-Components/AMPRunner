@@ -42,7 +42,9 @@ module.exports = async ({browser, url, queries}) =>
 
       if (__FORCE_SCROLL_TO__) {
         const [toElement, ...waitElements] = __FORCE_SCROLL_TO__
-        ;(await page.$(toElement)).hover().catch(log)
+        // ;(await page.$(toElement)).hover().catch(log)
+        await page.waitForSelector(toElement)
+        await page.hover(toElement)
         const [head, ...tail] = waitElements
         if (typeof head === 'number') {
           await page.waitFor(head)
